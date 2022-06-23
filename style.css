@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color:#FFCBC2;
+     height: 100vh;
+     width: 100vw;
+     box-shadow: 0 0 30px rgb(0, 0, 0);
+
+ }
+ .calculator{
+     position: relative;
+     height:auto;
+     width:400px;
+     max-width: 100%;
+     padding:1em;
+     border-radius: 30px;
+     background-color: black;
+ }
+
+ .calculator #display{
+     position: relative;
+     margin: 0px 0.5em;
+     height:160px;
+     width: auto;
+     max-width: 430px;
+     display: flex;
+     align-items:flex-end;
+     justify-content:flex-end;
+     background-color: rgb(0, 0, 0);
+     border-bottom: 1px solid grey;
+     font-size: 30px;
+     margin-bottom: 20px;
+     overflow-y:scroll;
+     color: aliceblue;
+ }
+
+ #display::-webkit-scrollbar{
+     /* display: block; */
+     height: 3px;
+ }
+ .calculator .buttons{
+    height:auto;
+    position: relative;
+    width:auto;
+    max-width: 430px;
+    margin: 0 0.5em;
+    background-color: rgb(0, 0, 0);
+ }
+ .calculator button{
+     position:relative;
+     height:2em;
+     width: 2.5em;
+     border-radius: 15px;
+     font-size:30px;
+     padding:0 .4em ;
+     margin-right: 15px;
+     margin-top:20px;
+     cursor: pointer;
+     transition:all 200ms ease;
+     border: none;
+     color: #FF5E54;
+
+ }
+ .calculator button:hover{
+     transform: scale(1.1);
+     background-color: rgba(30, 29, 29, 0.578);
+ }
+.Operator{
+     background-color:#FFCBC2 ;
+ }
+ .number{
+     background-color: rgba(67, 66, 66, 0.68);
+ }
+ .calculator .buttons button.zero{
+    width:170px;
+    margin-bottom:-10px;
+}
+#equal{
+    height:88px;
+    margin-top:2px ;
+
+}
+.calculator .buttons button.dot{
+    margin-bottom: -10px;
+}
+.calculator .buttons button.add{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.container .write{
+    font-size: 10em;
+    padding-left:25px;
+    color: #FF5E54;
+    font-family: 'DM Serif Text', serif;
+}
